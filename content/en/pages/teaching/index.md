@@ -10,6 +10,6 @@ teams on their own ventures, using the Lean LaunchPad methodology: customer
 discovery interviews, the Business Model Canvas, competitive analysis, revenue
 forecasting, and a final investor pitch in front of guest judges.
 
-Earlier, I supervised final projects in the **Department of Computer Science** at
+Earlier, I supervised final projects in the Department of Computer Science at
 Bar-Ilan, served as a teaching assistant in the International MBA program, and
 developed and taught an advanced EJB course for Amdocs engineers.
