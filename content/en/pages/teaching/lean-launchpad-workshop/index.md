@@ -17,7 +17,7 @@ gallery:
   - { src: img/teaching/lean-launchpad-workshop/overview-05.png, caption: "The incubator space" }
 ---
 **Start-up Founding (70-692-02) / Start-up Founding — Advanced (70-669-02)**
-Lean LaunchPad Workshop · Dr. Zac Sadan
+Lean LaunchPad Workshop · Zac Sadan
 
 The workshop runs over two semesters, on Wednesdays every other week, 18:00–20:00,
 in the new *Halalit* space — Bar-Ilan University's start-up hub and incubator.
