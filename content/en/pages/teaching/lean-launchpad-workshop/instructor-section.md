@@ -46,11 +46,11 @@ Mockups: [Renderforest](https://www.renderforest.com/) · Adobe XD · [MockFlow]
 **Dr. Zac Sadan** is a lecturer at the Graduate School of Business Administration,
 Bar-Ilan University, and an entrepreneur and founder of an information-security
 start-up. He holds a Ph.D. in Business Administration, specializing in Information
-Systems, from Bar-Ilan University. He served as Chief Scientist at Cyren and held
+Systems, from Bar-Ilan University. He served as Chief Scientist at Commtouch and held
 senior research, development and innovation roles in the information-security
 industry. His research focuses on entrepreneurship, information systems and
 information security.
 
-CTO @ Protected Media · previously Chief Scientist at Cyren (Nasdaq: CYRN) ·
+CTO @ Protected Media · previously Chief Scientist at Commtouch ·
 Ph.D. in Information Systems from Bar-Ilan University · research interests:
 entrepreneurship, information systems and cyber-security.
