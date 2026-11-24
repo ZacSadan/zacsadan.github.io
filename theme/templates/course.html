@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ url('teaching/') }}">{{ ui.nav.teaching }}</a>
+</nav>
+{% endblock %}
+
+{% block subtitle %}
+<p class="page-lead">{{ page.code }} · {{ page.program }} · {{ page.years }}</p>
+{% endblock %}
+
+{% block content %}
+<div class="with-aside">
+  <div class="prose">
+    <p class="lead">{{ page.summary }}</p>
+    {{ content }}
+  </div>
+  {% if children %}
+  <aside class="aside-sticky">
+    <div class="card">
+      <h2 class="card__title">{{ ui.classes }}</h2>
+      <ul class="class-list">
+        {% for k in children %}
+        <li><a href="{{ url(k.url) }}"><span>{{ k.title }}</span>
+          {% if k.gallery %}<i class="fa-regular fa-images" aria-hidden="true"></i>{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+  {% endif %}
+</div>
+{{ m.gallery(page.gallery, asset, ui) }}
+{% endblock %}

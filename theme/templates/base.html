@@ -1,0 +1,101 @@
+{% import "_macros.html" as m %}
+<!doctype html>
+<html lang="{{ lang.code }}" dir="{{ lang.dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% set page_title = (page.title ~ " — " ~ site.name) if page.title and page.layout != "home" else (site.name_full ~ " — " ~ site.tagline) %}
+  {% set page_desc = page.description | default(site.description) %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc }}">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="canonical" href="{{ config.base_url }}/{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ config.base_url }}/{{ page.url }}">
+  {% if site.photo %}<meta property="og:image" content="{{ config.base_url }}/assets/{{ site.photo }}">{% endif %}
+  <link rel="icon" href="{{ theme_url('favicon.svg') }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="{{ theme_url('css/style.css') }}">
+  {% if page.layout == "home" %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":{{ site.name_full | tojson }},
+   "jobTitle":{{ site.positions[0] | tojson }},"email":"mailto:{{ site.email }}",
+   "affiliation":{"@type":"CollegeOrUniversity","name":"Bar-Ilan University"},
+   "alumniOf":{"@type":"CollegeOrUniversity","name":"Bar-Ilan University"},
+   "url":{{ config.base_url | tojson }},
+   "sameAs":{{ site.links | rejectattr("label", "equalto", "Email") | map(attribute="url") | list | tojson }}}
+  </script>
+  {% endif %}
+</head>
+<body class="layout-{{ page.layout }}">
+  <a class="skip-link" href="#main">{{ ui.skip_to_content }}</a>
+
+  <header class="site-header">
+    <div class="site-header__brand">
+      <a class="site-name" href="{{ home }}">{{ site.name_full }}</a>
+      <p class="site-tagline">{{ site.tagline }}</p>
+    </div>
+    <nav class="site-nav" aria-label="Main">
+      <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-list">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i> {{ ui.menu }}
+      </button>
+      <ul id="nav-list" class="site-nav__list">
+        {% for item in config.nav %}
+          {% set active = (item.path == "" and page.url == "") or (item.path and page.url.startswith(item.path)) %}
+          <li><a href="{{ url(item.path) }}"{% if active %} aria-current="page"{% endif %}>{{ ui.nav[item.key] }}</a></li>
+        {% endfor %}
+        {% if languages | length > 1 %}
+          {% for l in languages if l.code != lang.code %}
+          <li class="site-nav__lang"><a href="{{ root }}{{ '' if l.code == languages[0].code else l.code ~ '/' }}{{ page.url }}" lang="{{ l.code }}">{{ l.name }}</a></li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    {% block main %}
+    <div class="page-head">
+      <div class="container">
+        {% block breadcrumb %}{% endblock %}
+        <h1>{{ page.title }}</h1>
+        {% block subtitle %}{% endblock %}
+      </div>
+    </div>
+    <div class="container page-body">
+      {% block content %}{{ content }}{% endblock %}
+    </div>
+    {% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <p class="site-footer__label">{{ ui.contact }}</p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>{{ site.location }}</p>
+      </div>
+      <div>
+        <p class="site-footer__label">{{ ui.links }}</p>
+        {{ m.icon_links(site.links, "footer-links") }}
+      </div>
+    </div>
+    <div class="container site-footer__base">
+      © {{ today.year }} {{ site.name }} · {{ ui.updated }}: {{ today.strftime("%B %Y") }}
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="{{ ui.gallery }}">
+    <button class="lightbox__close" aria-label="{{ ui.close }}"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <img alt="">
+    <p class="lightbox__caption"></p>
+    <a class="lightbox__open" target="_blank" rel="noopener">{{ ui.open_image }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+  </dialog>
+  <script src="{{ theme_url('js/site.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------
+# Site-wide build settings.
+# Content lives in content/<lang>/ ; look & feel lives in theme/.
+# ---------------------------------------------------------------
+
+base_url: https://zacsadan.github.io   # no trailing slash
+theme: theme                            # swap this folder to change the design
+
+# Languages: the first one is the default and is served from the site root.
+# To add Hebrew later: create content/he/ (copy content/en/ and translate),
+# then add the entry below. It will be built under /he/ with dir="rtl".
+languages:
+  - code: en
+    name: English
+    dir: ltr
+  # - code: he
+  #   name: עברית
+  #   dir: rtl
+
+# Top navigation (paths are relative to the language root).
+nav:
+  - { key: home,         path: "" }
+  - { key: teaching,     path: "teaching/" }
+  - { key: publications, path: "publications/" }
+  - { key: software,     path: "software/" }
+  - { key: cv,           path: "cv/" }

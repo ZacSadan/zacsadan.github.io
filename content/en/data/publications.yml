@@ -1,0 +1,115 @@
+# Publications. Each section is rendered in this order.
+# Fields: title, authors, venue, year, details, status, theme, links {label: url}, citations
+# `theme` connects working papers to research themes (see research.yml).
+
+me: Z. Sadan          # highlighted in author lists
+
+sections:
+
+  - id: working-papers
+    title: Working papers (2026)
+    intro: Ongoing research projects; titles are provisional.
+    items:
+      - title: "Preserving targeting decisions across content-taxonomy migrations: IAB Content Taxonomy 2.x→3.x"
+        year: 2026
+        status: In preparation
+        theme: reliable-ai
+      - title: "What the user sees, at what cost: efficient and in-browser LLMs for content and brand-safety classification"
+        year: 2026
+        status: In preparation
+        theme: reliable-ai
+      - title: "What do passive browser microbenchmarks measure? A known-device study and an audit of public code"
+        year: 2026
+        status: In preparation
+        theme: measurement
+      - title: "Can TLS fingerprints detect HTTPS interception? A controlled evaluation in 2026"
+        year: 2026
+        status: In preparation
+        theme: detection
+
+  - id: journal
+    title: Journal articles
+    items:
+      - title: "Social network analysis for cluster-based IP spam reputation"
+        authors: Z. Sadan, D. G. Schwartz
+        venue: Information Management & Computer Security
+        details: 20(4), 281–295
+        year: 2012
+        selected: true
+        links:
+          DOI: https://doi.org/10.1108/09685221211267657
+      - title: "Social network analysis of web links to eliminate false positives in collaborative anti-spam systems"
+        authors: Z. Sadan, D. G. Schwartz
+        venue: Journal of Network and Computer Applications
+        details: 34(5), 1717–1723
+        year: 2011
+        selected: true
+        links:
+          DOI: https://doi.org/10.1016/j.jnca.2011.06.004
+      - title: "WhiteScript: Using social network analysis parameters to balance between browser usability and malware exposure"
+        authors: Z. Sadan, D. G. Schwartz
+        venue: Computers & Security
+        details: 30(1), 4–12
+        year: 2011
+        selected: true
+        links:
+          DOI: https://doi.org/10.1016/j.cose.2010.10.001
+      - title: "Strip-mining the Web with SAIM: A system for the analysis of instant messaging"
+        authors: D. G. Schwartz, Z. Sadan
+        venue: International Journal of Business Data Communications and Networking
+        details: 2(2), 1–20
+        year: 2006
+        links:
+          DOI: https://doi.org/10.4018/jbdcn.2006040101
+
+  - id: talks
+    title: Conference talks
+    items:
+      - title: "The “harmless” $19Bn adware fraud scheme that’s eating your data plan, your battery life and stealing your privacy and personal data"
+        authors: Z. Sadan, R. Yu
+        venue: AVAR 2018 — Association of Anti-Virus Asia Researchers International Conference
+        year: 2018
+        links:
+          Conference: https://aavar.org/avar2018/
+
+  - id: patents
+    title: Patents
+    items:
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent 11,790,407 B2
+        details: "Granted Oct. 17, 2023 · Assignee: Protected Media Ltd."
+        year: 2023
+        links:
+          Google Patents: https://patents.google.com/patent/US11790407B2/en
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent 11,734,726 B2
+        details: "Granted Aug. 22, 2023 · Assignee: Protected Media Ltd."
+        year: 2023
+        links:
+          Google Patents: https://patents.google.com/patent/US11734726B2/en
+      - title: "Advertisement verification data summarization using rule induction algorithms"
+        authors: Z. Sadan
+        venue: US Provisional Patent Application 63/464,951
+        year: 2023
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent Application Publication US 2022/0027961 A1
+        year: 2022
+        links:
+          Google Patents: https://patents.google.com/patent/US20220027961A1/en
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent Application Publication US 2020/0311177 A1
+        year: 2020
+        links:
+          Google Patents: https://patents.google.com/patent/US20200311177A1/en
+      - title: "Method and system for secure communication between a public network and a local network"
+        authors: A. Bragagnini, D. Buffa, P. Pellegrino, L. Scevola, D. Shohat, Z. Sadan, N. Gilboa
+        venue: US Patent 8,274,979 B2
+        details: "Granted Sep. 25, 2012 · Assignee: Telecom Italia S.p.A."
+        year: 2012
+        selected: true
+        links:
+          Google Patents: https://patents.google.com/patent/US8274979B2/en

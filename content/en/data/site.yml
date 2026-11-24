@@ -1,0 +1,57 @@
+# Personal profile — the single source for name, titles, links and bio.
+
+name: Zac Sadan
+name_full: Dr. Zac Sadan
+honorific: Dr.
+initials: ZS
+
+# Lines shown under the name (most important first).
+positions:
+  - Lecturer, Graduate School of Business Administration, Bar-Ilan University
+  - Co-founder & CTO, Protected Media (acquired by Mediaocean)
+
+tagline: Trustworthy AI and Internet Security at Scale
+
+# Put a square photo at content/assets/img/profile.jpg and set the path below.
+# While empty, a monogram is shown instead.
+photo: ""
+
+description: >-
+  Dr. Zac Sadan — researcher in cybersecurity, machine learning and
+  large-scale Internet systems; lecturer at Bar-Ilan University.
+
+email: zac+biu@sadan.me
+location: Bar-Ilan University, Ramat Gan, Israel
+
+links:
+  - { label: Google Scholar, icon: "fa-brands fa-google-scholar", url: "https://scholar.google.com/citations?user=RAbXL9wAAAAJ" }
+  - { label: LinkedIn,       icon: "fa-brands fa-linkedin", url: "https://www.linkedin.com/in/zacsadan/" }
+  - { label: GitHub,         icon: "fa-brands fa-github",   url: "https://github.com/ZacSadan?tab=repositories" }
+  - { label: Email,          icon: "fa-solid fa-envelope",  url: "mailto:zac+biu@sadan.me" }
+
+research_interests:
+  - Fraud, bot and automated-traffic detection
+  - Trustworthy and efficient machine learning
+  - Web security and browser measurement
+  - Privacy-aware analytics
+  - Social network analysis and reputation systems
+  - Innovation and entrepreneurship
+
+bio: |
+  I am a researcher and lecturer working at the intersection of **cybersecurity,
+  machine learning and large-scale Internet systems**. My research asks how we
+  can detect malicious and automated activity on the web reliably, efficiently
+  and with respect for user privacy — and how to measure what web platforms and
+  AI models actually do in the wild.
+
+  I co-founded **Protected Media**, an ad-fraud and bot-detection company that
+  was acquired by Flashtalking (now Mediaocean) in 2021, and served as its CTO,
+  leading machine-learning systems that process tens of billions of requests per
+  day. Earlier I co-founded a2z Technologies (IP acquired) and was **Chief
+  Scientist at Commtouch (later Cyren)**, where I led research on anti-spam,
+  phishing, botnets and text classification.
+
+  I hold a **Ph.D. in Information Systems**, an MBA and a **B.Sc. in Computer
+  Science**, all from Bar-Ilan University. Since 2016 I have taught
+  entrepreneurship and innovation workshops at Bar-Ilan's Graduate School of
+  Business Administration (EMBA, IMBA and MBA programs).

@@ -1,0 +1,55 @@
+{# Reusable building blocks. #}
+
+{% macro icon_links(links, cls="icon-links") %}
+<ul class="{{ cls }}">
+  {% for l in links %}
+  <li><a href="{{ l.url }}"{% if not l.url.startswith("mailto:") %} target="_blank" rel="noopener"{% endif %}>
+    <i class="{{ l.icon }}" aria-hidden="true"></i><span>{{ l.label }}</span></a></li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro authors(text, me) -%}
+{{ text | highlight(me) }}
+{%- endmacro %}
+
+{% macro pub(item, me, ui, show_year=true) %}
+<li class="pub">
+  {% if show_year %}<span class="pub__year">{{ item.year }}</span>{% endif %}
+  <div class="pub__body">
+    <p class="pub__title">{{ item.title }}</p>
+    {% if item.authors %}<p class="pub__authors">{{ authors(item.authors, me) }}</p>{% endif %}
+    {% if item.venue or item.details %}
+    <p class="pub__venue">{% if item.venue %}<em>{{ item.venue }}</em>{% endif %}{% if item.details %}{{ ", " if item.venue }}{{ item.details }}{% endif %}</p>
+    {% endif %}
+    {% if item.status or item.links %}
+    <p class="pub__meta">
+      {% if item.status %}<span class="badge">{{ item.status }}</span>{% endif %}
+      {% for label, href in (item.links or {}).items() %}
+      <a class="pill" href="{{ href }}" target="_blank" rel="noopener">{{ label }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</li>
+{% endmacro %}
+
+{% macro gallery(items, asset, ui) %}
+{% if items %}
+<section class="gallery-section">
+  <h2>{{ ui.gallery }}</h2>
+  <ul class="gallery">
+    {% for g in items %}
+    <li>
+      <figure>
+        <a href="{{ asset(g.src) }}" class="gallery__link" data-caption="{{ g.caption }}">
+          <img src="{{ asset(g.src) }}" alt="{{ g.caption }}" loading="lazy">
+        </a>
+        <figcaption>{{ g.caption }}</figcaption>
+      </figure>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endmacro %}

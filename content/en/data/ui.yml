@@ -1,0 +1,41 @@
+# Interface strings used by the theme. Translate this file for a new language.
+
+nav:
+  home: Home
+  publications: Publications
+  teaching: Teaching
+  software: Software
+  cv: CV
+
+skip_to_content: Skip to content
+research: Research
+menu: Menu
+about: About
+research_interests: Research interests
+all_publications: All publications
+google_scholar: Google Scholar
+resources: Resources
+contact: Contact
+in_preparation: In preparation
+courses: Courses
+cohorts: cohorts
+classes: Classes
+gallery: Gallery
+back_to: Back to
+previous: Previous
+next: Next
+view_on_github: View all repositories on GitHub
+stars: stars
+updated: Last updated
+close: Close
+open_image: Open image
+page_not_found: Page not found
+page_not_found_text: The page you are looking for does not exist or has moved.
+go_home: Go to the home page
+links: Links
+cv:
+  education: Education
+  academic: Academic appointments and teaching
+  industry: Research and industry experience
+  publications: Publications and patents
+  honors: Honors and awards

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% set siblings = children_of(parent.url) if parent else [] %}
+
+{% block breadcrumb %}
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ url('teaching/') }}">{{ ui.nav.teaching }}</a>
+  {% if parent %}<span aria-hidden="true">›</span> <a href="{{ url(parent.url) }}">{{ parent.title }}</a>{% endif %}
+</nav>
+{% endblock %}
+
+{% block subtitle %}
+{% if parent %}<p class="page-lead">{{ parent.title }} · {{ parent.code }}</p>{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="prose">{{ content }}</div>
+{{ m.gallery(page.gallery, asset, ui) }}
+
+{% if siblings | length > 1 %}
+<nav class="pager" aria-label="{{ ui.classes }}">
+  {% set idx = siblings | map(attribute="url") | list %}
+  {% set i = idx.index(page.url) %}
+  {% if i > 0 %}{% set p = siblings[i - 1] %}
+  <a class="pager__prev" href="{{ url(p.url) }}"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {{ p.title }}</a>
+  {% else %}<span></span>{% endif %}
+  <a class="pager__up" href="{{ url(parent.url) }}">{{ ui.back_to }} {{ parent.title }}</a>
+  {% if i < siblings | length - 1 %}{% set n = siblings[i + 1] %}
+  <a class="pager__next" href="{{ url(n.url) }}">{{ n.title }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  {% else %}<span></span>{% endif %}
+</nav>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,61 @@
+# Open-source projects (curated from https://github.com/ZacSadan).
+
+profile: https://github.com/ZacSadan?tab=repositories
+
+groups:
+  - title: Security and infrastructure
+    items:
+      - name: soc2-skill
+        url: https://github.com/ZacSadan/soc2-skill
+        description: SOC 2 security scanner for GCP, AWS, Google Workspace, Bitbucket, Trello and Confluence.
+      - name: dns-zone-scan
+        url: https://github.com/ZacSadan/dns-zone-scan
+        description: Scans exported DNS zone files and reports, per record, what it points to, whether anything answers, IP ownership and served certificates.
+      - name: AS_Mysql
+        url: https://github.com/ZacSadan/AS_Mysql
+        description: Query Aerospike from a MySQL client.
+
+  - title: AI and machine learning
+    items:
+      - name: podcasts-summary
+        url: https://github.com/ZacSadan/podcasts-summary
+        description: Automated pipeline that monitors podcast feeds and YouTube channels, extracts transcripts and generates summaries with a local Gemma LLM.
+      - name: Sign-Language-Detector
+        url: https://github.com/ZacSadan/Sign-Language-Detector
+        description: Sign-language detection and translation using the speaker's mobile phone.
+      - name: brain-mouse
+        url: https://github.com/ZacSadan/brain-mouse
+        description: Reading brain signals to control the computer mouse.
+      - name: ScreenPhotosCapture
+        url: https://github.com/ZacSadan/ScreenPhotosCapture
+        description: Present camera-captured photos on a large screen using hand-tracking and face-detection ML libraries.
+
+  - title: Tools and libraries
+    items:
+      - name: GoogleSheets-As-SQL-DB-for-AppScript
+        url: https://github.com/ZacSadan/GoogleSheets-As-SQL-DB-for-AppScript
+        description: Apps Script library for querying Google Sheets as an SQL database.
+      - name: trello-analysis
+        url: https://github.com/ZacSadan/trello-analysis
+        description: Turns a Trello board's activity history into a calendar of who worked on what, and when.
+      - name: contact-qr-code-generator
+        url: https://github.com/ZacSadan/contact-qr-code-generator
+        description: vCard QR-code generator in plain JavaScript that runs entirely in the browser.
+      - name: InMeeting-Light
+        url: https://github.com/ZacSadan/InMeeting-Light
+        description: Controls a smart bulb according to the importance of your Google Calendar meetings.
+      - name: oscar-js
+        url: https://github.com/ZacSadan/oscar-js
+        description: A complete therapy report from a Löwenstein prisma SD card, generated entirely in the browser.
+      - name: income-database
+        url: https://github.com/ZacSadan/income-database
+        description: "Zip code → income bucket mapping database."
+
+  - title: Maker and open hardware
+    items:
+      - name: Open-Solar-E-Car
+        url: https://github.com/ZacSadan/Open-Solar-E-Car
+        description: "Open Solar E-Car: a free, open design for green transportation."
+      - name: MakeLab-Projects
+        url: https://github.com/ZacSadan/MakeLab-Projects
+        description: Maker projects built at MakeLab.

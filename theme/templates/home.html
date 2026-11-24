@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% set r = data.research %}
+
+{% block main %}
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__photo">
+      {% if site.photo %}
+        <img src="{{ asset(site.photo) }}" alt="{{ site.name_full }}" width="220" height="220">
+      {% else %}
+        <span class="monogram" aria-hidden="true">{{ site.initials }}</span>
+      {% endif %}
+    </div>
+    <div class="hero__text">
+      <h1>{{ site.name_full }}</h1>
+      <ul class="hero__positions">
+        {% for p in site.positions %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+      {{ m.icon_links(site.links, "icon-links icon-links--buttons") }}
+    </div>
+  </div>
+</section>
+
+<div class="container home-grid">
+  <section class="home-about" aria-labelledby="about-h">
+    <h2 id="about-h">{{ ui.about }}</h2>
+    {{ site.bio | md }}
+  </section>
+  <aside class="home-side">
+    <div class="card">
+      <h2 class="card__title">{{ ui.research_interests }}</h2>
+      <ul class="tag-list">
+        {% for i in site.research_interests %}<li>{{ i }}</li>{% endfor %}
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<section class="band band--pale" id="research" aria-labelledby="research-h">
+  <div class="container">
+    <h2 id="research-h" class="band__title">{{ ui.research }}: {{ r.title }}</h2>
+    <div class="theme-cards">
+      {% for t in r.themes %}
+      <article class="theme-card" id="{{ t.id }}">
+        <i class="{{ t.icon }}" aria-hidden="true"></i>
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.summary }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="callout callout--white">{{ r.background | md }}</div>
+  </div>
+</section>
+{% endblock %}

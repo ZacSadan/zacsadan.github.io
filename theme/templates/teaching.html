@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="prose">{{ content }}</div>
+<h2>{{ ui.courses }}</h2>
+<div class="course-cards">
+  {% for c in children if c.layout == "course" %}
+  {% set classes = children_of(c.url) %}
+  <article class="course-card">
+    <p class="course-card__code">{{ c.code }}</p>
+    <h3><a href="{{ url(c.url) }}">{{ c.title }}</a></h3>
+    <p class="course-card__meta">{{ c.program }} · {{ c.years }}</p>
+    <p>{{ c.summary }}</p>
+    {% if classes or c.cohorts %}
+    <ul class="year-chips" aria-label="{{ ui.classes }}">
+      {% for k in classes %}<li><a href="{{ url(k.url) }}">{{ k.year }}</a></li>{% endfor %}
+      {# `cohorts`: years without their own page; `resources: true` links to the course page #}
+      {% for y in c.cohorts or [] %}<li><span>{{ y }}</span></li>{% endfor %}
+      {% if c.resources %}<li><a href="{{ url(c.url) }}">{{ ui.resources }}</a></li>{% endif %}
+    </ul>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>
+{% endblock %}

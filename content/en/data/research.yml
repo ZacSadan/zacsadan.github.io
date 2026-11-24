@@ -1,0 +1,39 @@
+# Research themes. Working papers in publications.yml link here via `theme: <id>`.
+
+title: Trustworthy AI and Internet Security at Scale
+
+themes:
+  - id: detection
+    title: Robust detection of fraud and automated traffic
+    icon: fa-solid fa-shield-halved
+    summary: >-
+      Detecting bots, AI agents, click fraud and network interception when the
+      adversary adapts and ground truth is scarce. Behavioral signals, graph
+      structure and network fingerprints, evaluated with leakage-aware benchmarks
+      and operational metrics such as PR-AUC, false-positive rate at fixed recall,
+      calibration and latency.
+
+  - id: reliable-ai
+    title: Reliable and efficient AI for content classification
+    icon: fa-solid fa-microchip
+    summary: >-
+      When do small or in-browser models match large language models on
+      safety-critical classification tasks such as brand safety and content
+      taxonomy? Cascades, selective prediction and calibration — with cost per
+      million decisions as a first-class metric — and keeping decisions stable as
+      taxonomies and models change.
+
+  - id: measurement
+    title: Web platform and privacy-aware measurement
+    icon: fa-solid fa-chart-line
+    summary: >-
+      What browser APIs, passive microbenchmarks and capability declarations
+      actually reveal, and how much data detection really needs. Controlled lab
+      studies with known devices, audits of public code, and the accuracy–privacy
+      trade-off of measurement on the open web.
+
+background: |
+  This agenda grows out of nearly three decades in Internet security — from
+  network-security engineering, through my Ph.D. research on reputation and my
+  browser-security publications, to building production fraud- and bot-detection
+  systems at Protected Media.

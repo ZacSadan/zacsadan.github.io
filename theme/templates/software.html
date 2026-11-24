@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% set sw = data.software %}
+
+{% block content %}
+<p><a class="btn" href="{{ sw.profile }}" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> {{ ui.view_on_github }}</a></p>
+<div class="prose">{{ content }}</div>
+{% for g in sw.groups %}
+<section>
+  <h2>{{ g.title }}</h2>
+  <div class="repo-cards">
+    {% for r in g["items"] %}
+    <a class="repo-card" href="{{ r.url }}" target="_blank" rel="noopener">
+      <p class="repo-card__name"><i class="fa-brands fa-github" aria-hidden="true"></i> {{ r.name }}</p>
+      <p>{{ r.description }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

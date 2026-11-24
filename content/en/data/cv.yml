@@ -1,0 +1,84 @@
+# Curriculum vitae. Sections render in this order.
+
+education:
+  - degree: Ph.D., Information Systems
+    place: Bar-Ilan University
+    years: 2006 – 2012
+  - degree: MBA, Information Systems
+    place: Bar-Ilan University
+    years: 2000 – 2002
+  - degree: B.Sc., Computer Science
+    place: Bar-Ilan University
+    years: 1996 – 1999
+  - degree: B.A., Economics and Logistics
+    place: Bar-Ilan University
+    years: 1993 – 1995
+
+academic:
+  - role: Lecturer — Innovation & Entrepreneurship workshops and courses
+    place: Graduate School of Business Administration, Bar-Ilan University
+    years: 2016 – present
+    details:
+      - EMBA Entrepreneurship Workshop (70-185) — ten consecutive cohorts, 2017–2026
+      - Lean LaunchPad Entrepreneurship Workshop (70-692) — two-semester incubator workshop, 2016–2019
+      - Introduction to Entrepreneurship (70-693) — 2018–2020
+      - IMBA Final Project supervision — 2019–2021
+  - role: Supervisor of Computer Science final projects
+    place: Department of Computer Science, Bar-Ilan University (Israeli Internet “Hasbara” project, with ISOC-IL and the Ministry of Foreign Affairs)
+    years: 2003 – 2013 (intermittent)
+  - role: Teaching Assistant, International MBA Program
+    place: Bar-Ilan University
+    years: 2002
+
+industry:
+  - role: CTO, Protected Media
+    place: Mediaocean (Protected Media acquisition)
+    years: 2021 – 2027
+    details:
+      - Real-time ad-fraud and bot-detection platform serving 50B requests per day at sub-millisecond latency
+      - Large-scale LLM inference — about 0.5 trillion tokens per month with Gemma 4
+      - On-page NLP content-classification model (patented)
+      - Machine-learning summarization of massive advertising datasets (patented)
+      - Engagement, exposure and attention prediction models trained on terabytes of data
+      - Auto-AI Policy Builder — automated generation of verification and blocking policies
+  - role: Co-founder & CTO
+    place: Protected Media (acquired by Mediaocean, 2021)
+    years: 2014 – 2021
+    details:
+      - Client-, network- and server-side botnet and fraud detection (reverse engineering, honeypots, network reputation, off-path analysis, JavaScript analysis)
+      - Machine learning on several terabytes and billions of requests per day
+  - role: Co-founder & CTO
+    place: a2z Technologies (bootstrapped; IP acquired)
+    years: 2013 – 2014
+    details:
+      - Cross-platform end-user security products; large-scale auto-scaling AWS infrastructure
+  - role: Chief Scientist
+    place: "Commtouch Software (later Cyren, Nasdaq: CYRN)"
+    years: 2006 – 2013
+    details:
+      - Research and development of new products in anti-spam, anti-virus, phishing and web security
+      - Botnets / APT research (Israeli Chief Scientist program); text classification and data mining
+      - WebSaaS security cloud — traffic scanning through nodes and proxies worldwide
+  - role: Technology trainer, advisor and startup judge
+    place: IDC Elevator, BizTEC (Technion), Amdocs (EJB course developer and instructor)
+    years: 2003 – 2013 (intermittent)
+  - role: Founder & CTO
+    place: e-commerce start-up
+    years: 2006 – 2007
+  - role: Product Development Coordinator
+    place: GuardIT Technologies — network-security chip software for Telecom Italia Labs
+    years: 2003 – 2006
+  - role: Team Leader and Computer Engineer
+    place: Packet Technologies — firewall / VPN on chip
+    years: 1999 – 2002
+  - role: Member of the Encryption Team
+    place: Check Point Software Technologies
+    years: 1998 – 1999
+
+honors:
+  - title: First prize, CyberStorm 2016 — Israel cyber start-ups competition (Protected Media)
+    year: 2016
+  - title: Red Herring Europe Top 100 winner (Protected Media)
+    year: 2018
+  - title: Major-General citation; Brigadier-General citation; twice a candidate for the President's Distinguished Soldier citation
+    year: IDF

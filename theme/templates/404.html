@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{# 404.html is served from any depth, so links here are absolute. #}
+{% block main %}
+<div class="container notfound">
+  <p class="notfound__code">404</p>
+  <h1>{{ ui.page_not_found }}</h1>
+  <p>{{ ui.page_not_found_text }}</p>
+  <p><a class="btn" href="/">{{ ui.go_home }}</a></p>
+</div>
+{% endblock %}
