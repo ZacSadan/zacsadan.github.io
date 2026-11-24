@@ -77,6 +77,13 @@ sections:
     items:
       - title: "Using embedded elements for online content verification"
         authors: A. Greiner, Z. Sadan
+        venue: US Patent 12,353,499 B2
+        details: "Granted Jul. 8, 2025 · Assignee: Protected Media Ltd."
+        year: 2025
+        links:
+          Google Patents: https://patents.google.com/patent/US12353499B2/en
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
         venue: US Patent 11,790,407 B2
         details: "Granted Oct. 17, 2023 · Assignee: Protected Media Ltd."
         year: 2023
@@ -89,6 +96,13 @@ sections:
         year: 2023
         links:
           Google Patents: https://patents.google.com/patent/US11734726B2/en
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent 11,669,870 B2
+        details: "Granted Jun. 6, 2023 · Assignee: Protected Media Ltd."
+        year: 2023
+        links:
+          Google Patents: https://patents.google.com/patent/US11669870B2/en
       - title: "Advertisement verification data summarization using rule induction algorithms"
         authors: Z. Sadan
         venue: US Provisional Patent Application 63/464,951
@@ -99,6 +113,20 @@ sections:
         year: 2022
         links:
           Google Patents: https://patents.google.com/patent/US20220027961A1/en
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent 11,328,036 B2
+        details: "Granted May 10, 2022 · Assignee: Protected Media Ltd."
+        year: 2022
+        links:
+          Google Patents: https://patents.google.com/patent/US11328036B2/en
+      - title: "Using embedded elements for online content verification"
+        authors: A. Greiner, Z. Sadan
+        venue: US Patent 11,170,412 B2
+        details: "Granted Nov. 9, 2021 · Assignee: Protected Media Ltd."
+        year: 2021
+        links:
+          Google Patents: https://patents.google.com/patent/US11170412B2/en
       - title: "Using embedded elements for online content verification"
         authors: A. Greiner, Z. Sadan
         venue: US Patent Application Publication US 2020/0311177 A1

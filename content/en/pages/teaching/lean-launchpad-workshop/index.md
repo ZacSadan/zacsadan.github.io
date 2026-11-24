@@ -46,8 +46,8 @@ Some teams were already generating revenue by the end of the workshop:
 Hebrew resources:
 
 - [Guerilla testing (Uniqui)](http://uniqui.co.il/guerilla-testing/)
-- [50 questions for your next business plan (Geektime)](http://www.geektime.co.il/50-questions-for-your-next-business-programs/)
-- [How to build an MVP (Geektime)](http://www.geektime.co.il/how-to-build-mvp/)
+- [50 questions for your next business plan (Geektime)](https://www.geektime.co.il/50-questions-for-your-next-business-programs/)
+- [How to build an MVP (Geektime)](https://www.geektime.co.il/how-to-build-mvp/)
 - [Start-Up Nation Finder](http://finder.startupnationcentral.org/)
 - [List of VCs and angel investors](https://docs.google.com/spreadsheets/d/1zuSO8fMBcju5S-ZfDh3ffajnn2U2eau40CbtBnp4ubA/pubhtml)
 
