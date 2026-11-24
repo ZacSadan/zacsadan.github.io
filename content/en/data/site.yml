@@ -24,9 +24,9 @@ email: zac+biu@sadan.me
 location: Bar-Ilan University, Ramat Gan, Israel
 
 links:
-  - { label: Google Scholar, icon: "fa-brands fa-google-scholar", url: "https://scholar.google.com/citations?user=RAbXL9wAAAAJ" }
   - { label: LinkedIn,       icon: "fa-brands fa-linkedin", url: "https://www.linkedin.com/in/zacsadan/" }
   - { label: GitHub,         icon: "fa-brands fa-github",   url: "https://github.com/ZacSadan?tab=repositories" }
+  - { label: Google Scholar, icon: "fa-brands fa-google-scholar", url: "https://scholar.google.com/citations?user=RAbXL9wAAAAJ" }
   - { label: Email,          icon: "fa-solid fa-envelope",  url: "mailto:zac+biu@sadan.me" }
 
 research_interests:
