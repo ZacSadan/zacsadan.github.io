@@ -14,7 +14,7 @@ tagline: Trustworthy AI and Internet Security at Scale
 
 # Put a square photo at content/assets/img/profile.jpg and set the path below.
 # While empty, a monogram is shown instead.
-photo: ""
+photo: img/profile.jpg
 
 description: >-
   Dr. Zac Sadan — researcher in cybersecurity, machine learning and
