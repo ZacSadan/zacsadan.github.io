@@ -36,7 +36,7 @@ industry:
     years: 2021 – 2027
     details:
       - Real-time ad-fraud and bot-detection platform serving 50B requests per day at sub-millisecond latency
-      - Large-scale LLM inference — about 0.5 trillion tokens per month with Gemma 4
+      - Large-scale LLM inference — about 0.5 trillion tokens per month with Gemma 4 (text, image, audio, video)
       - On-page NLP content-classification model (patented)
       - Machine-learning summarization of massive advertising datasets (patented)
       - Engagement, exposure and attention prediction models trained on terabytes of data
