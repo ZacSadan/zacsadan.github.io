@@ -109,12 +109,6 @@ sections:
         year: 2023
       - title: "Using embedded elements for online content verification"
         authors: A. Greiner, Z. Sadan
-        venue: US Patent Application Publication US 2022/0027961 A1
-        year: 2022
-        links:
-          Google Patents: https://patents.google.com/patent/US20220027961A1/en
-      - title: "Using embedded elements for online content verification"
-        authors: A. Greiner, Z. Sadan
         venue: US Patent 11,328,036 B2
         details: "Granted May 10, 2022 · Assignee: Protected Media Ltd."
         year: 2022
@@ -127,12 +121,6 @@ sections:
         year: 2021
         links:
           Google Patents: https://patents.google.com/patent/US11170412B2/en
-      - title: "Using embedded elements for online content verification"
-        authors: A. Greiner, Z. Sadan
-        venue: US Patent Application Publication US 2020/0311177 A1
-        year: 2020
-        links:
-          Google Patents: https://patents.google.com/patent/US20200311177A1/en
       - title: "Method and system for secure communication between a public network and a local network"
         authors: A. Bragagnini, D. Buffa, P. Pellegrino, L. Scevola, D. Shohat, Z. Sadan, N. Gilboa
         venue: US Patent 8,274,979 B2
