@@ -10,7 +10,6 @@
     <p class="course-card__code">{{ c.code }}</p>
     <h3><a href="{{ url(c.url) }}">{{ c.title }}</a></h3>
     <p class="course-card__meta">{{ c.program }} · {{ c.years }}</p>
-    <p>{{ c.summary }}</p>
     {% if classes or c.cohorts %}
     <ul class="year-chips" aria-label="{{ ui.classes }}">
       {% for k in classes %}<li><a href="{{ url(k.url) }}">{{ k.year }}</a></li>{% endfor %}
@@ -19,6 +18,7 @@
       {% if c.resources %}<li><a href="{{ url(c.url) }}">{{ ui.resources }}</a></li>{% endif %}
     </ul>
     {% endif %}
+    <p>{{ c.summary }}</p>
   </article>
   {% endfor %}
 </div>

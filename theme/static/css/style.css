@@ -251,6 +251,7 @@ th { background: var(--pale-green); color: var(--biu-green); font-weight: 700; }
   border: 1px solid var(--line); font-weight: 600; font-size: 0.92rem; text-decoration: none;
 }
 .year-chips span { background: #fff; color: var(--muted); }
+.course-card .year-chips { margin: 0 0 14px; }
 .year-chips a:hover { background: var(--jungle); color: #fff; }
 .class-list { list-style: none; margin: 0; padding: 0; }
 .class-list a {

@@ -21,9 +21,9 @@
 
 {% block content %}
 {{ content }}
+<section id="industry"><h2>{{ ui.cv.industry }}</h2>{{ entries(cv.industry) }}</section>
 <section id="education"><h2>{{ ui.cv.education }}</h2>{{ entries(cv.education) }}</section>
 <section id="academic"><h2>{{ ui.cv.academic }}</h2>{{ entries(cv.academic) }}</section>
-<section id="industry"><h2>{{ ui.cv.industry }}</h2>{{ entries(cv.industry) }}</section>
 <section id="publications">
   <h2>{{ ui.cv.publications }}</h2>
   <p><a href="{{ url('publications/') }}">{{ ui.all_publications }}</a>
