@@ -8,7 +8,7 @@ sections:
 
   - id: working-papers
     title: Working papers (2026)
-    intro: Ongoing research projects; titles are provisional.
+    intro: Ongoing research projects
     items:
       - title: "Preserving targeting decisions across content-taxonomy migrations: IAB Content Taxonomy 2.x→3.x"
         year: 2026
@@ -28,7 +28,7 @@ sections:
         theme: detection
 
   - id: journal
-    title: Journal articles
+    title: Journal articles - Peer Reviewed
     items:
       - title: "Social network analysis for cluster-based IP spam reputation"
         authors: Z. Sadan, D. G. Schwartz
