@@ -12,11 +12,11 @@ sections:
     items:
       - title: "Preserving targeting decisions across content-taxonomy migrations: IAB Content Taxonomy 2.x→3.x"
         year: 2026
-        status: In preparation
+        status: Submitted to journal
         theme: reliable-ai
       - title: "What the user sees, at what cost: efficient and in-browser LLMs for content and brand-safety classification"
         year: 2026
-        status: In preparation
+        status: Completed — to be submitted
         theme: reliable-ai
       - title: "What do passive browser microbenchmarks measure? A known-device study and an audit of public code"
         year: 2026
