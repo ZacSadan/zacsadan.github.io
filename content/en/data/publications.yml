@@ -10,7 +10,7 @@ sections:
     title: Working papers (2026)
     intro: Ongoing research projects
     items:
-      - title: "Preserving targeting decisions across content-taxonomy migrations: IAB Content Taxonomy 2.x→3.x"
+      - title: "The Hidden Cost of a Taxonomy Upgrade: How IAB Content Taxonomy 2.x→3.x Migration Silently Misplaces Advertising, and a Decision-Preserving Fix"
         year: 2026
         status: Submitted to journal
         theme: reliable-ai
