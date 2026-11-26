@@ -62,6 +62,16 @@ sections:
         links:
           DOI: https://doi.org/10.4018/jbdcn.2006040101
 
+  - id: talks
+    title: Conference talks
+    items:
+      - title: "The “harmless” $19Bn adware fraud scheme that’s eating your data plan, your battery life and stealing your privacy and personal data"
+        authors: Z. Sadan, R. Yu
+        venue: AVAR 2018 — Association of Anti-Virus Asia Researchers International Conference
+        year: 2018
+        links:
+          Conference: https://events.aavar.org/avar2018/index.php/agenda/
+
   - id: patents
     title: Patents
     items:
@@ -119,13 +129,3 @@ sections:
         selected: true
         links:
           Google Patents: https://patents.google.com/patent/US8274979B2/en
-
-  - id: talks
-    title: Conference talks
-    items:
-      - title: "The “harmless” $19Bn adware fraud scheme that’s eating your data plan, your battery life and stealing your privacy and personal data"
-        authors: Z. Sadan, R. Yu
-        venue: AVAR 2018 — Association of Anti-Virus Asia Researchers International Conference
-        year: 2018
-        links:
-          Conference: https://aavar.org/avar2018/
