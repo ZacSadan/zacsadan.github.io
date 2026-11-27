@@ -65,6 +65,17 @@ th { background: var(--pale-green); color: var(--biu-green); font-weight: 700; }
 
 /* ---------- header ---------- */
 .site-header { background: var(--header-green); color: #fff; }
+/* banner: thin green strip on top, the illustration, then a lime accent line */
+.site-banner {
+  display: block; background: #f4f8f2;
+  border-top: 10px solid var(--header-green);
+  border-bottom: 3px solid var(--lime);
+}
+.site-banner img {
+  display: block; width: 100%; object-fit: cover; object-position: 50% 50%;
+  height: clamp(150px, 22vw, 340px);              /* home page: full banner */
+}
+body:not(.layout-home) .site-banner img { height: clamp(90px, 11vw, 170px); }  /* inner pages: slimmer */
 .site-header__brand { text-align: center; padding: 26px var(--gutter) 14px; }
 .site-name {
   color: #fff; text-decoration: none; font-size: clamp(1.5rem, 3.2vw, 1.9rem);

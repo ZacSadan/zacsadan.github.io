@@ -38,10 +38,13 @@
   <a class="skip-link" href="#main">{{ ui.skip_to_content }}</a>
 
   <header class="site-header">
-    <div class="site-header__brand">
-      <a class="site-name" href="{{ home }}">{{ site.name_full }}</a>
-      <p class="site-tagline">{{ site.tagline }}</p>
-    </div>
+    <a class="site-banner" href="{{ home }}">
+      <picture>
+        <source type="image/webp" srcset="{{ asset('img/banner-800.webp') }} 800w, {{ asset('img/banner-1672.webp') }} 1672w" sizes="100vw">
+        <img src="{{ asset('img/banner-1672.jpg') }}" width="1672" height="941"
+             alt="{{ site.name_full }} — {{ site.tagline }}" fetchpriority="high">
+      </picture>
+    </a>
     <nav class="site-nav" aria-label="Main">
       <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-list">
         <i class="fa-solid fa-bars" aria-hidden="true"></i> {{ ui.menu }}
