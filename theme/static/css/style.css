@@ -67,13 +67,22 @@ th { background: var(--pale-green); color: var(--biu-green); font-weight: 700; }
 .site-header { background: var(--header-green); color: #fff; }
 /* banner: thin green strip on top, the illustration, then a lime accent line */
 .site-banner {
-  display: block; background: #f4f8f2;
+  display: block; background: #fdfefd;            /* matches the image's own background */
   border-top: 10px solid var(--header-green);
   border-bottom: 3px solid var(--lime);
 }
+/* the whole illustration is always visible: scaled to the slim height, centered,
+   with its left/right edges faded into the background */
 .site-banner img {
-  display: block; width: 100%; object-fit: cover; object-position: 50% 50%;
-  height: clamp(90px, 11vw, 170px);               /* same slim banner on every page */
+  display: block; margin-inline: auto;
+  width: auto; height: auto; max-width: 100%;
+  max-height: clamp(90px, 11vw, 170px);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent),
+                      linear-gradient(to bottom, #000 75%, transparent);
+  -webkit-mask-composite: source-in;
+          mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent),
+                      linear-gradient(to bottom, #000 75%, transparent);
+          mask-composite: intersect;
 }
 .site-header__brand { text-align: center; padding: 26px var(--gutter) 14px; }
 .site-name {

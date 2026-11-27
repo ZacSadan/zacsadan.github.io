@@ -40,8 +40,8 @@
   <header class="site-header">
     <a class="site-banner" href="{{ home }}">
       <picture>
-        <source type="image/webp" srcset="{{ asset('img/banner-800.webp') }} 800w, {{ asset('img/banner-1672.webp') }} 1672w" sizes="100vw">
-        <img src="{{ asset('img/banner-1672.jpg') }}" width="1672" height="941"
+        <source type="image/webp" srcset="{{ asset('img/banner-band-800.webp') }} 800w, {{ asset('img/banner-band-1672.webp') }} 1672w" sizes="(max-width: 520px) 100vw, 520px">
+        <img src="{{ asset('img/banner-band-1672.jpg') }}" width="1672" height="550"
              alt="{{ site.name_full }} — {{ site.tagline }}" fetchpriority="high">
       </picture>
     </a>
