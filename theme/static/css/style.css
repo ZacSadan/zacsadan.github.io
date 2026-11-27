@@ -92,20 +92,20 @@ th { background: var(--pale-green); color: var(--biu-green); font-weight: 700; }
 .site-name:hover { color: var(--lime); }
 .site-tagline { margin: 2px 0 0; color: var(--lime); font-size: 1rem; letter-spacing: 0.04em; }
 
-.site-nav { background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 1px 0 rgb(0 0 0 / 3%); }
+.site-nav { background: var(--biu-green); box-shadow: 0 1px 0 rgb(0 0 0 / 6%); }
 .site-nav__list {
   list-style: none; margin: 0 auto; padding: 0 var(--gutter); max-width: var(--container);
   display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 6px;
 }
 .site-nav__list a {
-  display: block; padding: 13px 14px 11px; color: var(--forest); text-decoration: none;
+  display: block; padding: 13px 14px 11px; color: rgb(255 255 255 / 88%); text-decoration: none;
   font-weight: 600; border-bottom: 3px solid transparent;
 }
-.site-nav__list a:hover { color: var(--jungle); border-bottom-color: var(--lime); }
-.site-nav__list a[aria-current="page"] { color: var(--biu-green); border-bottom-color: var(--jungle); }
+.site-nav__list a:hover { color: var(--lime); border-bottom-color: rgb(195 220 135 / 50%); }
+.site-nav__list a[aria-current="page"] { color: #fff; border-bottom-color: var(--lime); }
 .site-nav__toggle {
-  display: none; width: 100%; padding: 12px var(--gutter); border: 0; background: #fff;
-  font: inherit; font-weight: 600; color: var(--forest); text-align: start; cursor: pointer;
+  display: none; width: 100%; padding: 12px var(--gutter); border: 0; background: var(--biu-green);
+  font: inherit; font-weight: 600; color: #fff; text-align: start; cursor: pointer;
 }
 
 /* ---------- page head ---------- */
@@ -360,7 +360,7 @@ th { background: var(--pale-green); color: var(--biu-green); font-weight: 700; }
   .site-nav__toggle { display: block; }
   .site-nav__list { display: none; flex-direction: column; padding-bottom: 8px; }
   .site-nav.is-open .site-nav__list { display: flex; }
-  .site-nav__list a { padding: 10px 4px; border-bottom: 1px solid var(--line); }
+  .site-nav__list a { padding: 10px 4px; border-bottom: 1px solid rgb(255 255 255 / 14%); }
   .pub { grid-template-columns: 1fr; gap: 2px; }
   .timeline > li { grid-template-columns: 1fr; gap: 2px; }
   .research-theme { grid-template-columns: 1fr; gap: 8px; }
