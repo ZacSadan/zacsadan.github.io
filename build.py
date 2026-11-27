@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import functools
+import hashlib
 import http.server
 import shutil
 import sys
@@ -57,6 +58,14 @@ def page_url(rel: Path) -> str:
 
 
 class Builder:
+    @functools.lru_cache(maxsize=None)
+    def version_tag(self, path: str) -> str:
+        """`?v=<content hash>` for CSS/JS, so browsers fetch them again after a change."""
+        f = self.theme / "static" / path
+        if f.suffix not in (".css", ".js") or not f.is_file():
+            return ""
+        return "?v=" + hashlib.sha1(f.read_bytes()).hexdigest()[:8]
+
     def __init__(self):
         self.config = load_yaml(ROOT / "config.yml")
         theme = ROOT / self.config.get("theme", "theme")
@@ -140,7 +149,7 @@ class Builder:
                 root=root, home=home, today=today,
                 url=lambda p, _h=home: _h + p,
                 asset=lambda p, _r=root: _r + "assets/" + p,
-                theme_url=lambda p, _r=root: _r + "theme/" + p,
+                theme_url=lambda p, _r=root: _r + "theme/" + p + self.version_tag(p),
             )
             # Markdown bodies may use {{ url('...') }} / {{ asset('...') }}.
             body = self.env.from_string(page["body"]).render(**ctx)
