@@ -18,6 +18,10 @@ sections:
         year: 2026
         status: To be submitted
         theme: reliable-ai
+      - title: "Cost-Optimal LLM Routing for Multimodal Brand-Safety Detection at Web Scale"
+        year: 2026
+        status: In preparation
+        theme: reliable-ai
       - title: "What do passive browser microbenchmarks measure? A known-device study and an audit of public code"
         year: 2026
         status: In preparation
